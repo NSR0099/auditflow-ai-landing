@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* VyaparAI Fintech — Bold Teal + Deep Navy + Gold Accents */
+
+@layer base {
+  :root {
+    /* MindBridge 'EAI Corporate Trust' Theme */
+    /* Backgrounds: Clean White */
+    --background: 0 0% 100%;
+    --foreground: 215 28% 17%;
+    /* Dark Blue/Gray Text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    /* Primary: MindBridge Deep Navy (#002D72) */
+    --primary: 216 100% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Light Cool Gray */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 216 100% 22%;
+    /* Text is Primary Navy */
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent: MindBridge Cyan (#00B5E2) */
+    --accent: 192 100% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive: High Risk Red */
+    --destructive: 356 77% 47%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Warning: Medium Risk Orange */
+    --warning: 18 100% 65%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Success: Professional Green */
+    --success: 142 69% 29%;
+    --success-foreground: 0 0% 100%;
+
+    --gold: 43 96% 56%;
+    --gold-foreground: 43 96% 10%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 216 100% 22%;
+    /* Ring matches Primary */
+
+    --radius: 0.25rem;
+    /* Sharper, corporate corners (4px) */
+
+    /* Sidebar / Dashboard Colors */
+    --sidebar-background: 216 100% 22%;
+    /* Deep Navy */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 216 100% 22%;
+    --sidebar-accent: 216 80% 30%;
+    /* Lighter Navy */
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 216 80% 30%;
+    --sidebar-ring: 216 100% 22%;
+  }
+
+  .dark {
+    /* Professional Dark Mode */
+    --background: 215 28% 13%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 28% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 28% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 216 100% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 28% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 28% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 192 100% 44%;
+    /* Cyan */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 356 77% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 18 100% 65%;
+    --warning-foreground: 0 0% 100%;
+
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --gold: 43 96% 56%;
+    --gold-foreground: 43 96% 10%;
+
+    --border: 215 28% 25%;
+    --input: 215 28% 25%;
+    --ring: 192 100% 44%;
+    /* Cyan Ring in Dark Mode */
+
+    --sidebar-background: 216 100% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 192 100% 44%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 192 100% 44%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
